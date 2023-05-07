@@ -1,0 +1,157 @@
+/* css reset*/
+*{
+    padding: 0px;
+    margin: 0px;
+}
+/* navigation bar */
+#navbar{
+    display: flex;
+    
+}
+/* navigation bar:logo and img*/
+#logo{
+    margin: -23px -23px;
+    
+}
+
+#logo img{
+    margin: 23px 23px;
+    height: 120px;
+    width: 120px;
+}
+/* navigation bar:list styling */
+#navbar ul{
+    display: flex;
+    align-items: center;
+    
+}
+#navbar{
+    position: relative;
+}
+#navbar::before{
+    content: "";
+    background-color: black;
+    opacity: 0.5;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+#navbar ul li{
+    font-size: 1.3rem;
+    list-style: none;
+}
+#navbar ul li a{
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 20px;
+    color: aliceblue;
+}
+#navbar ul li a:hover{
+    color: rgb(10, 3, 3);
+    background-color: rgb(248, 242, 242);
+    font-size: larger;
+}
+/* home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3px 200px;
+    height: 400px;
+    font-family: 'Baloo Bhai 2', cursive;
+    height: 677px;
+
+}
+#home::before{
+    content: "";
+    background:url('../img/bb.jpg')no-repeat center ;
+    background-size: cover;
+    opacity: 0.85;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+    margin-top: 30px;
+
+}
+/* services */
+#services{
+    display: flex;
+    margin: 34px;
+}
+#services-container{
+    margin-top: 70px;
+}
+#services .box{
+    display: flex;
+    border: 2px solid black;
+    padding: 30px;
+    border-radius: 20px;
+    margin: 6px;
+    flex-direction: column;
+    
+}
+#services .box img{
+    height: 200px;
+    display: block;
+    margin: auto;
+}
+/* utility classes */
+.hprimary{
+    font-size: 3.8rem;
+    padding: 12px;
+}
+.btn{
+    padding: 20px;
+    background-color: mediumslateblue;
+    border-radius: 20px;
+    margin: 17px;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+}
+
+.hprimarycentre{
+    text-align: center;
+    font-size: 40px;
+}
+.hsecondrycentre:hover{
+    font-size: 30px;
+    color: blueviolet;
+}
+.hsecondrycentre{
+    text-align: center;
+}
+#home p{
+    font-size: large;
+    color: antiquewhite;
+}
+footer{
+    background: black;
+    color: aliceblue;
+    padding: 9px 20px;
+    text-align: center;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+#contact-box input{
+
+}
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    font-size: 1.1rem;
+}
+#contact-box form{
+    width: 40%;
+}
+#contact-box label{
+    font-size: 1.3rem;
+}
