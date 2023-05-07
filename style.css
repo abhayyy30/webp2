@@ -55,13 +55,16 @@
 /* home section */
 #home{
     display: flex;
-    flex-direction: column;
+    flex-direction:column;
     align-items: center;
     justify-content: center;
     padding: 3px 200px;
     height: 400px;
     font-family: 'Baloo Bhai 2', cursive;
     height: 677px;
+}
+#home{
+    color: black;
 
 }
 #home::before{
@@ -126,7 +129,7 @@
 }
 #home p{
     font-size: large;
-    color: antiquewhite;
+    color: black;
 }
 footer{
     background: black;
